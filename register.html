@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!--head-->
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+        <title>Dexterr - Register</title>
+
+        <!--CSS-->  
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="css/styles.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+        <!--<link href="css/page-center.css" type="text/css" rel="stylesheet" media="screen,projection">-->
+
+        <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
+        <link href="css/prism.css" type="text/css" rel="stylesheet" media="screen,projection">
+        <link href="js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
+    </head>
+    <!--head ends-->
+
+    <body class="cyan">
+
+         <!--Start Page Loading--> 
+        <div id="loader-wrapper">
+            <div id="loader"></div>        
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+        </div>
+         <!--End Page Loading--> 
+
+        <!--navbar-->
+        <div id="nav">
+            <div class="navbar-fixed">
+                <nav class="white" role="navigation">
+                    <div class="right-aligned-links">
+                        <a id="logo-container" href="#" class="brand-logo">Logo</a>
+                        <ul class="right hide-on-med-and-down">                    
+                            <li><a href="#">How it works<!--use video--></a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">FAQs</a></li>                    
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="login.html">Login</a></li>
+                            <a href="register.html" id="download-button" class="btn-flat waves-effect waves-light teal lighten-1">Register</a>
+                        </ul>
+
+                        <ul id="nav-mobile" class="side-nav">
+                            <li><a href="#">Navbar Link</a></li>
+                            <li><a href="#">How it works</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="login.php">Login</a></li>
+                        </ul>
+
+                        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--navbar ends-->
+
+        <div class="container" style="width:80%">
+
+            <ul class="collapsible popout" data-collapsible="accordion">
+                <!--individual-->
+                <li>
+                    <div class="collapsible-header"><i class="mdi-social-person-add"></i>Register as an Individual</div>
+                    <div class="collapsible-body">
+                        <!--individual registration-->
+                        <div class="row">
+                            <div class="col s12 m12 l12">
+                                <div class="card-panel">
+                                    <h4 class="header2">Individual</h4>
+                                    <div class="row">
+                                        <!--<form class="col s12" action="login.html" method="post">-->
+                                        <div class="row">
+                                            <div class="input-field col s12 m6">
+                                                <i class="mdi-action-account-circle prefix"></i>
+                                                <input id="firstName" type="text" class="validate">
+                                                <label for="firstName">First Name</label>
+                                            </div>
+                                            <div class="input-field col s12 m6">
+                                                <input id="lastName" type="text" class="validate">
+                                                <label for="lastName">Last Name</label>
+                                            </div>
+                                        </div>
+                                        <div class="row"> 
+                                            <div class="input-field col s12 m12">
+                                                <select name="sector" id="sector" class="validate">
+                                                    <option value="" disabled selected>Sector</option>
+                                                    <option value="1">Option 1</option>
+                                                    <option value="2">Option 2</option>
+                                                    <option value="3">Option 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="input-field col s12 m6">
+                                                <i class="mdi-communication-phone prefix"></i>
+                                                <input id="phone" type="number" class="validate">
+                                                <label for="phone">Phone</label>
+                                            </div>
+                                            <div class="input-field col s12 m6">
+                                                <i class="mdi-communication-email prefix"></i>
+                                                <input id="email" type="email" class="validate">
+                                                <label for="email">Email</label>
+                                            </div>
+                                        </div>                                            
+                                        <div class="row">
+                                            <div class="input-field col s12 m6">
+                                                <i class="mdi-action-lock-outline prefix"></i>
+                                                <input id="password" type="password" class="validate">
+                                                <label for="password">Password</label>
+                                            </div>
+<!--                                        </div>
+                                        <div class="row">-->
+                                            <div class="input-field col s12 m6">
+                                                <i class="mdi-action-lock-outline prefix"></i>
+                                                <input id="confirmPassword" type="password" class="validate">
+                                                <label for="confirmPassword">Confirm Password</label>
+                                            </div>
+                                        </div>
+                                            <div>
+                                            <div class="input-field col s12">
+                                                <input type="checkbox" id="indAgree"/>
+                                                <label for="indAgree">
+                                                    I agree to the <a class="modal-trigger" href="#modal1">Terms and Conditions</a>
+                                                    <!-- Modal Structure -->
+                                                    <div id="modal1" class="modal modal-fixed-footer">
+                                                        <div class="modal-content">
+                                                            <h4>Modal Header</h4>
+                                                            <p>A bunch of text</p>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <a href="#" class="waves-effect waves-green btn-flat modal-action modal-close">Agree</a>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="row">
+                                            <div class="input-field col s12">
+                                                <button class="btn cyan waves-effect waves-light right" onclick="registerIndividual()">
+                                                    <i class="mdi-action-perm-identity"></i> Register
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!--</form>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--individual registration ends-->
+                </li>                
+                <!--individual ends-->
+                <!--business-->
+                <li>
+                    <div class="collapsible-header"><i class="mdi-social-group-add"></i>Register as a Business</div>
+                    <div class="collapsible-body">
+                        <!--business-->
+                        <div class="row">
+                            <div class="col s12 m12 l12">
+                                <div class="card-panel">
+                                    <h4 class="header2">Business</h4>
+                                    <div class="row">
+                                        <!--<form class="col s12">-->
+                                        <div class="row">
+                                            <div class="input-field col s12">
+                                                <i class="mdi-action-account-circle prefix"></i>
+                                                <input id="businessName" type="text" class="validate">
+                                                <label for="businessName">Name of Business</label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="input-field col s12">                                                    
+                                                <select name="bSector" id="bSector" class="validate">
+                                                    <option value="" disabled selected>Sector</option>
+                                                    <option value="1">Option 1</option>
+                                                    <option value="2">Option 2</option>
+                                                    <option value="3">Option 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="input-field col s6">
+                                                <i class="mdi-action-account-circle prefix"></i>
+                                                <input id="cFirstName" type="text" class="validate">
+                                                <label for="cFirstName">First Name of Contact</label>
+                                            </div>
+                                            <div class="input-field col s6">
+                                                <input id="cLastName" type="text" class="validate">
+                                                <label for="cLastName">Last Name of Contact</label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="input-field col s6">
+                                                <i class="mdi-communication-phone prefix"></i>
+                                                <input id="bPhone" type="number" class="validate">
+                                                <label for="bPhone">Phone</label>
+                                            </div>
+                                            <div class="input-field col s6">
+                                                <i class="mdi-communication-email prefix"></i>
+                                                <input id="bEmail" type="email" class="validate">
+                                                <label for="bEmail">E-mail</label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="input-field col s6">
+                                                <i class="mdi-action-lock-outline prefix"></i>
+                                                <input id="bPassword" type="password" class="validate">
+                                                <label for="bPassword">Password</label>
+                                            </div>
+                                            <div class="input-field col s6">
+                                                <i class="mdi-action-lock-outline prefix"></i>
+                                                <input id="bConfirmPassword" type="password" class="validate">
+                                                <label for="bConfirmPassword">Confirm Password</label>
+                                            </div>
+                                        </div>
+                                        <!--<div class="row">-->                                                
+                                        <div class="input-field col s12">
+                                            <input type="checkbox" id="BusAgree"/>
+                                            <label for="BusAgree">
+                                                I agree to the <a class="modal-trigger" href="#modal2">Terms and Conditions</a>
+                                                <!-- Modal Structure -->
+                                                <div id="modal2" class="modal modal-fixed-footer">
+                                                    <div class="modal-content">
+                                                        <h4>Modal Header</h4>
+                                                        <p>A bunch of text</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a href="#" class="waves-effect waves-green btn-flat modal-action modal-close">Agree</a>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                        <!--</div>-->
+                                        <br>
+                                        <div class="row">
+                                            <div class="input-field col s12">
+                                                <button class="btn cyan waves-effect waves-light right" onclick="registerBusiness()">
+                                                    <i class="mdi-action-perm-identity"></i>Register
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!--</form>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--business ends-->
+                    </div>
+                </li>
+                <!--business ends-->
+            </ul>
+
+        </div>
+
+        <!--footer-->
+        <footer class="fixed-page-footer teal">
+            <div class="container">
+                <div class="row">
+                    <div class="col s4 m4 l4">
+                        <h5 class="white-text">Company Bio</h5>
+                        <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+                    </div>
+                    <div class="col s4 m4 l4">
+                        <h5 class="white-text">Settings</h5>
+                        <ul>
+                            <li><a class="white-text" href="#!">Link 1</a></li>
+                            <li><a class="white-text" href="#!">Link 2</a></li>
+                            <li><a class="white-text" href="#!">Link 3</a></li>
+                            <li><a class="white-text" href="#!">Link 4</a></li>
+                        </ul>
+                    </div>
+                    <div class="col s4 m4 l4">
+                        <h5 class="white-text">Connect</h5>
+                        <ul>
+                            <li><a class="white-text" href="#!">Link 1</a></li>
+                            <li><a class="white-text" href="#!">Link 2</a></li>
+                            <li><a class="white-text" href="#!">Link 3</a></li>
+                            <li><a class="white-text" href="#!">Link 4</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+                </div>
+            </div>
+        </footer>
+        <!--footer ends-->
+
+        <!--  Scripts-->
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="js/materialize.js"></script>
+
+        <script>
+                                                    $(document).ready(function () {
+                                                        $('select').material_select();
+                                                    });
+        </script>
+
+        <script src="js/init.js"></script>
+        <script src="js/dex.js"></script>
+        <!--<script src="js/jquery-2.1.3.js"></script>-->
+        <!--prism-->
+        <script type="text/javascript" src="js/prism.js"></script>
+        <!--scrollbar-->
+        <script type="text/javascript" src="js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+
+        <!--plugins.js - Some Specific JS codes for Plugin Settings-->
+        <script type="text/javascript" src="js/plugins.js"></script>
+
+    </body>
+</html>
