@@ -132,16 +132,11 @@ function uploadDebt() {
     var currency = document.getElementById('currency').value;
     var amount = document.getElementById('amount').value;
     var maturityDate = document.getElementById('maturityDate').value;
-//    maturityDate.toLocaleDateString();
-
-//    var $input = $('.datepicker').pickadate();
-//
-//// Use the picker object directly.
-//    var maturityDate = $input.pickadate('picker');
-
     var description = document.getElementById('summary').value;
-    var docDir = document.getElementById('supportingDocs').value;
-    var url = "php/controller.php?" + "cmd=5&debtorName=" + debtor + "&debtorPhone=" + phone + "&debtorEmail=" + email + "&currency=" + currency + "&amount=" + amount + "&maturityDate=" + maturityDate + "&summary=" + description + "&supportingDocs=" + docDir;
+    var supportingDocs = document.getElementById('supportingDocs').value;
+    
+    prompt("suppo",supportingDocs);
+    var url = "php/controller.php?" + "cmd=5&debtorName=" + debtor + "&debtorPhone=" + phone + "&debtorEmail=" + email + "&currency=" + currency + "&amount=" + amount + "&maturityDate=" + maturityDate + "&summary=" + description + "&supportingDocs=" + supportingDocs;
     prompt("before request", url);
     var objResult = sendRequest(url);
     prompt("after request", url);
@@ -162,7 +157,6 @@ function uploadDebt() {
 
 function displayDebt() {
     'use strict';
-//    var car = $("#cards");
     var card = "<div class='row' id='cards'>";
     var obj, index;
     var url = "php/controller.php?cmd=6";
@@ -193,15 +187,11 @@ function displayDebt() {
         }
     }
     card += "</div>";
-//    console.log(card);
     $("#cards").replaceWith(card);
 }
 
 function dashboard() {
     'use strict';
-    
-//    var obj, url = "php/controller.php?cmd=7";
-    
      $('#example').DataTable( {
          processing : true,
         "ajax": {

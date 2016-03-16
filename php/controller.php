@@ -48,9 +48,6 @@ function loginIndividual() {
     $row = $user->fetch();
 
     if ($row) {
-//        session_destroy();
-
-
         $_SESSION['email'] = $email;
         $_SESSION['password'] = $password;
         echo '{"result": 1, "message": "Login successful"}';
@@ -163,8 +160,8 @@ function uploadDebt() {
     $maturityDate = $_GET['maturityDate'];
 //    $maturityDate = date_format($_GET['maturityDate'], 'Y-m-d');
     $debtDescription = $_GET['summary'];
-    $docDir = "uploads/" . $_GET['supportingDocs'];
-    $row = $user->debtUpload($creditor, $debtor, $contact, $email, $currency, $amount, $maturityDate, $debtDescription, $docDir);
+    $supportingDocs = $_GET['supportingDocs'];
+    $row = $user->debtUpload($creditor, $debtor, $contact, $email, $currency, $amount, $maturityDate, $debtDescription, $supportingDocs);
 
     if (!$row) {
         echo '{"result": 0, "message": "Debt was not uploaded"}';
@@ -207,43 +204,26 @@ function displayDebt() {
     }
 }
 
-//echo $_SESSION['email'];
-
 function dashboard() {
     include "debts.php";
     $debt = new debts();
-    
+
     include "user.php";
     $user = new user();
-    
+
     $user->getUserByEmail($_SESSION['email']);
     $row = $user->fetch();
-    
+
     $debt->displayDebts($row["userId"]);
-//    $result = $debt->fetch();
-//    print_r($result);
-
-    
-
-    
-
-//    print_r($row);
     if (!$result = $debt->fetch()) {
         echo '{"result": 0, "message": "Debt was not displayed"}';
         return;
     } else {
-//        print_r($result);
         echo'{"result":1, "data": [';
         while ($result) {
-            
-//            if ($result["creditorId"] == $row["userId"]) {
-//                print_r($result);
             echo '{"Debtor": "' . $result["debtorName"] . '", "Currency": "' . $result["currency"] . '",
                 "Amount": "' . $result["amount"] . '", "Date": "' . $result["dateCreated"] . '",
                 "Due Date": "' . $result["maturityDate"] . '", "Status": "' . $result["debtStatus"] . '"}';
-//            }
-//            $result = $debt->fetch();
-//            $result["creditorId"] == $row["userId"]
             if ($result = $debt->fetch()) {
                 echo ',';
             }

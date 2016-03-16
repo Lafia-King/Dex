@@ -61,8 +61,8 @@ class user extends adb {
         $query = "SELECT EXISTS (SELECT * FROM users WHERE email = '$email' AND password = '$password')";
         return $this->query($query);
     }
-    function debtUpload($creditor, $debtor, $contact, $email, $currency, $amount, $maturityDate, $debtDescription, $docDir){
-        $query = "INSERT INTO debts set creditorId = '$creditor', debtorName = '$debtor', debtorPhone = '$contact', debtorEmail = '$email', currency = '$currency', amount ='$amount', maturityDate = '$maturityDate', summary = '$debtDescription', supportingDocs = '$docDir'";
+    function debtUpload($creditor, $debtor, $contact, $email, $currency, $amount, $maturityDate, $debtDescription, $supportingDocs){
+        $query = "INSERT INTO debts set creditorId = '$creditor', debtorName = '$debtor', debtorPhone = '$contact', debtorEmail = '$email', currency = '$currency', amount ='$amount', maturityDate = '$maturityDate', summary = '$debtDescription', supportingDocs = '$supportingDocs'";
         return $this->query($query);
     }
 
