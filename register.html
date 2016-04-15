@@ -76,81 +76,81 @@
                                 <div class="card-panel">
                                     <h4 class="header2">Individual</h4>
                                     <div class="row">
-                                        <!--<form class="col s12" action="login.html" method="post">-->
-                                        <div class="row">
-                                            <div class="input-field col s12 m6">
-                                                <i class="mdi-action-account-circle prefix"></i>
-                                                <input id="firstName" type="text" class="validate">
-                                                <label for="firstName">First Name</label>
+                                        <form class="col s12" action="login.html" method="post">
+                                            <div class="row">
+                                                <div class="input-field col s12 m6">
+                                                    <i class="mdi-action-account-circle prefix"></i>
+                                                    <input id="firstName" type="text" class="validate">
+                                                    <label for="firstName">First Name</label>
+                                                </div>
+                                                <div class="input-field col s12 m6">
+                                                    <input id="lastName" type="text" class="validate">
+                                                    <label for="lastName">Last Name</label>
+                                                </div>
                                             </div>
-                                            <div class="input-field col s12 m6">
-                                                <input id="lastName" type="text" class="validate">
-                                                <label for="lastName">Last Name</label>
+                                            <div class="row"> 
+                                                <div class="input-field col s12 m12">
+                                                    <select name="sector" id="sector" class="validate">
+                                                        <option value="" disabled selected>Sector</option>
+                                                        <option value="1">Option 1</option>
+                                                        <option value="2">Option 2</option>
+                                                        <option value="3">Option 3</option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="row"> 
-                                            <div class="input-field col s12 m12">
-                                                <select name="sector" id="sector" class="validate">
-                                                    <option value="" disabled selected>Sector</option>
-                                                    <option value="1">Option 1</option>
-                                                    <option value="2">Option 2</option>
-                                                    <option value="3">Option 3</option>
-                                                </select>
+                                            <div class="row">
+                                                <div class="input-field col s12 m6">
+                                                    <i class="mdi-communication-phone prefix"></i>
+                                                    <input id="phone" type="number" class="validate">
+                                                    <label for="phone">Phone</label>
+                                                </div>
+                                                <div class="input-field col s12 m6">
+                                                    <i class="mdi-communication-email prefix"></i>
+                                                    <input id="email" type="email" class="validate">
+                                                    <label for="email">Email</label>
+                                                </div>
+                                            </div>                                            
+                                            <div class="row">
+                                                <div class="input-field col s12 m6">
+                                                    <i class="mdi-action-lock-outline prefix"></i>
+                                                    <input id="password" type="password" class="validate">
+                                                    <label for="password">Password</label>
+                                                </div>
+                                                <!--                                        </div>
+                                                                                        <div class="row">-->
+                                                <div class="input-field col s12 m6">
+                                                    <i class="mdi-action-lock-outline prefix"></i>
+                                                    <input id="confirmPassword" type="password" class="validate">
+                                                    <label for="confirmPassword">Confirm Password</label>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="input-field col s12 m6">
-                                                <i class="mdi-communication-phone prefix"></i>
-                                                <input id="phone" type="number" class="validate">
-                                                <label for="phone">Phone</label>
-                                            </div>
-                                            <div class="input-field col s12 m6">
-                                                <i class="mdi-communication-email prefix"></i>
-                                                <input id="email" type="email" class="validate">
-                                                <label for="email">Email</label>
-                                            </div>
-                                        </div>                                            
-                                        <div class="row">
-                                            <div class="input-field col s12 m6">
-                                                <i class="mdi-action-lock-outline prefix"></i>
-                                                <input id="password" type="password" class="validate">
-                                                <label for="password">Password</label>
-                                            </div>
-                                            <!--                                        </div>
-                                                                                    <div class="row">-->
-                                            <div class="input-field col s12 m6">
-                                                <i class="mdi-action-lock-outline prefix"></i>
-                                                <input id="confirmPassword" type="password" class="validate">
-                                                <label for="confirmPassword">Confirm Password</label>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="input-field col s12">
-                                                <input type="checkbox" id="indAgree"/>
-                                                <label for="indAgree">
-                                                    I agree to the <a class="modal-trigger" href="#modal1">Terms and Conditions</a>
-                                                    <!-- Modal Structure -->
-                                                    <div id="modal1" class="modal modal-fixed-footer">
-                                                        <div class="modal-content">
-                                                            <h4>Modal Header</h4>
-                                                            <p>A bunch of text</p>
+                                            <div>
+                                                <div class="input-field col s12">
+                                                    <input type="checkbox" id="indAgree"/>
+                                                    <label for="indAgree">
+                                                        I agree to the <a class="modal-trigger" href="#modal1">Terms and Conditions</a>
+                                                        <!-- Modal Structure -->
+                                                        <div id="modal1" class="modal modal-fixed-footer">
+                                                            <div class="modal-content">
+                                                                <h4>Modal Header</h4>
+                                                                <p>A bunch of text</p>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <a href="#" class="waves-effect waves-green btn-flat modal-action modal-close">Agree</a>
+                                                            </div>
                                                         </div>
-                                                        <div class="modal-footer">
-                                                            <a href="#" class="waves-effect waves-green btn-flat modal-action modal-close">Agree</a>
-                                                        </div>
-                                                    </div>
-                                                </label>
+                                                    </label>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <br>
-                                        <div class="row">
-                                            <div class="input-field col s12">
-                                                <button class="btn cyan waves-effect waves-light right" onclick="registerIndividual()">
-                                                    <i class="mdi-action-perm-identity"></i> Register
-                                                </button>
+                                            <br>
+                                            <div class="row">
+                                                <div class="input-field col s12">
+                                                    <button class="btn cyan waves-effect waves-light right" onclick="registerIndividual()">
+                                                        <i class="mdi-action-perm-identity"></i> Register
+                                                    </button>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <!--</form>-->
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -173,13 +173,13 @@
                                         <div class="row">
                                             <div class="input-field col s12">
                                                 <i class="mdi-action-account-circle prefix"></i>
-                                                <input id="businessName" type="text" class="validate">
+                                                <input id="businessName" type="text" class="validate" required>
                                                 <label for="businessName">Name of Business</label>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="input-field col s12">                                                    
-                                                <select name="bSector" id="bSector" class="validate">
+                                                <select name="bSector" id="bSector" class="validate" required>
                                                     <option value="" disabled selected>Sector</option>
                                                     <option value="1">Option 1</option>
                                                     <option value="2">Option 2</option>
@@ -190,35 +190,35 @@
                                         <div class="row">
                                             <div class="input-field col s6">
                                                 <i class="mdi-action-account-circle prefix"></i>
-                                                <input id="cFirstName" type="text" class="validate">
+                                                <input id="cFirstName" type="text" class="validate" required>
                                                 <label for="cFirstName">First Name of Contact</label>
                                             </div>
                                             <div class="input-field col s6">
-                                                <input id="cLastName" type="text" class="validate">
+                                                <input id="cLastName" type="text" class="validate" required>
                                                 <label for="cLastName">Last Name of Contact</label>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="input-field col s6">
                                                 <i class="mdi-communication-phone prefix"></i>
-                                                <input id="bPhone" type="number" class="validate">
+                                                <input id="bPhone" type="number" class="validate" required>
                                                 <label for="bPhone">Phone</label>
                                             </div>
                                             <div class="input-field col s6">
                                                 <i class="mdi-communication-email prefix"></i>
-                                                <input id="bEmail" type="email" class="validate">
+                                                <input id="bEmail" type="email" class="validate" required>
                                                 <label for="bEmail">E-mail</label>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="input-field col s6">
                                                 <i class="mdi-action-lock-outline prefix"></i>
-                                                <input id="bPassword" type="password" class="validate">
+                                                <input id="bPassword" type="password" class="validate" required>
                                                 <label for="bPassword">Password</label>
                                             </div>
                                             <div class="input-field col s6">
                                                 <i class="mdi-action-lock-outline prefix"></i>
-                                                <input id="bConfirmPassword" type="password" class="validate">
+                                                <input id="bConfirmPassword" type="password" class="validate" required>
                                                 <label for="bConfirmPassword">Confirm Password</label>
                                             </div>
                                         </div>
@@ -243,7 +243,7 @@
                                         <br>
                                         <div class="row">
                                             <div class="input-field col s12">
-                                                <button class="btn cyan waves-effect waves-light right" onclick="registerBusiness()">
+                                                <button class="btn cyan waves-effect waves-light right" type="submit" onclick="registerBusiness(event)">
                                                     <i class="mdi-action-perm-identity"></i>Register
                                                 </button>
                                             </div>

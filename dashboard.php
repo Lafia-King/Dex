@@ -29,6 +29,7 @@
 
         <!-- CORE CSS-->    
         <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+        <!--<link href="js/plugins/sweetalert/sweetalert.css" type="text/css" rel="stylesheet" media="screen,projection">-->
         <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
         <link href="http://cdn.datatables.net/1.10.6/css/jquery.dataTables.min.css" type="text/css" rel="stylesheet" media="screen,projection">
 
@@ -131,12 +132,12 @@
                             </ul>
                         </li>
                         <li class="li-hover"><div class="divider"></div></li>
-                        <li class="bold"><a href="sales.html" class="waves-effect waves-cyan"><i class="mdi-communication-email"></i>Sales<span class="new badge">4</span></a>
+                        <li class="bold"><a href="sales.php" class="waves-effect waves-cyan"><i class="mdi-communication-email"></i>Sales<span class="new badge">4</span></a>
                         </li>
                         <li class="bold"><a href="app-calendar.html" class="waves-effect waves-cyan"><i class="mdi-editor-insert-invitation"></i>Watch List</a>
                         </li>
                         <li class="li-hover"><div class="divider"></div></li>
-                        <li class="bold"><a href="purchases.html" class="waves-effect waves-cyan"><i class="mdi-communication-email"></i>Purchases/Bids<span class="new badge">4</span></a>
+                        <li class="bold"><a href="purchases.php" class="waves-effect waves-cyan"><i class="mdi-communication-email"></i>Purchases/Bids<span class="new badge">4</span></a>
                         </li>
                         <li class="bold"><a href="index.html" class="waves-effect waves-cyan"><i class="mdi-action-dashboard"></i>All Lists</a>
                         </li>
@@ -250,13 +251,13 @@
                     </div>
                     <!--summaries end-->
 
-                    <div class="row col s12 m12 l5">
-                        <div class="row col s12 m12 l5">
+                    <div class="row col s12 m12 l8">
+                        <div class="row col s12 m12 l8">
                             <ul class="tabs">
-                                <li class="tab col s1"><a href="#tab1">Tab 1</a></li>
-                                <li class="tab col s1"><a href="#test2">In Progress</a></li>
-                                <li class="tab col s1"><a href="#test3">Upcoming</a></li>
-                                <li class="tab col s1"><a href="#test4">Paid</a></li>
+                                <li class="tab col s1"><a class="white-text light-blue darken-1 waves-effect waves-light" href="#tab1"><i class="mdi-action-perm-identity"></i>Tab 1</a></li>
+                                <li class="tab col s1"><a class="white-text pink darken-1 waves-effect waves-light" href="#test2"><i class="mdi-action-perm-identity"></i>In Progress</a></li>
+                                <li class="tab col s1"><a class="white-text purple darken-1 waves-effect waves-light" href="#test3"><i class="mdi-action-perm-identity"></i>Upcoming</a></li>
+                                <li class="tab col s1"><a class="white-text teal darken-1 waves-effect waves-light" href="#test4"><i class="mdi-action-perm-identity"></i>Paid</a></li>
                             </ul>
                         </div>
                         <!--tab1-->
@@ -647,12 +648,22 @@
         <script type="text/javascript" src="js/plugins/data-tables/js/jquery.dataTables.min.js"></script>
         <script type="text/javascript" src="js/plugins/data-tables/data-tables-script.js"></script>
         <!--data-tables end-->
+        <!--sweetalert -->
+        <!--<script type="text/javascript" src="js/plugins/sweetalert/sweetalert.min.js"></script>-->   
+        <!--sweetalert-->
+
         <script>
             $(document).ready(function () {
                 $('ul.tabs').tabs();
                 dashboard();
             });
         </script>
+<!--        <script>
+            "use strict";
+            $('.btn-success').click(function () {
+                swal("Good job!", "You clicked the button!", "success");
+            });
+        </script>-->
 
         <!--                 chartist 
                         <script type="text/javascript" src="js/plugins/chartist-js/chartist.min.js"></script>   

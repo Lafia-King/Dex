@@ -5,37 +5,37 @@ define("UPLOAD_DIR", "../uploads/");
 
 //include_once '../models/uploader_class.php';
 
-if (!empty($_FILES["myFile"])) {
-   $myFile = $_FILES["myFile"];
+if (!empty($_FILES["supportingDocs"])) {
+    $myFile = $_FILES["supportingDocs"];
 
-   if ($myFile["error"] !== UPLOAD_ERR_OK) {
-      echo "<p>An error occurred.</p>";
-      exit;
-   }
+    if ($myFile["error"] !== UPLOAD_ERR_OK) {
+        echo "<p>An error occurred.</p>";
+        exit;
+    }
 
-   // ensure a safe filename
-   $name = preg_replace("/[^A-Z0-9._-]/i", "_", $myFile["name"]);
+    // ensure a safe filename
+    $name = preg_replace("/[^A-Z0-9._-]/i", "_", $myFile["name"]);
 
-   // don't overwrite an existing file
-   $i = 0;
-   $parts = pathinfo($name);
-   while (file_exists(UPLOAD_DIR . $name)) {
-      $i++;
-      $name = $parts["filename"] . "-" . $i . "." . $parts["extension"];
-   }
+    // don't overwrite an existing file
+    $i = 0;
+    $parts = pathinfo($name);
+    while (file_exists(UPLOAD_DIR . $name)) {
+        $i++;
+        $name = $parts["filename"] . "-" . $i . "." . $parts["extension"];
+    }
 
-   // preserve file from temporary directory
-   $success = move_uploaded_file($myFile["tmp_name"], UPLOAD_DIR . $name);
-   if (!$success) {
-      echo "<p>Unable to save file.</p>";
-      exit;
-   }
+    // preserve file from temporary directory
+    $success = move_uploaded_file($myFile["tmp_name"], UPLOAD_DIR . $name);
+    if (!$success) {
+        echo "<p>Unable to save file.</p>";
+        exit;
+    }
 
 
 
-   header("location:../dashboard.html");
+    header("location:../dashboard.php");
 
-   // set proper permissions on the new file
+    // set proper permissions on the new file
 //   chmod(UPLOAD_DIR . $name, 0644);
 }
 //$target_dir = "uploads/";

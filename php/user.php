@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * Description of users
+ *
+ * @author Judah Lafia-King
+ */
 include_once("adb.php");
 
 class user extends adb {
@@ -34,7 +39,7 @@ class user extends adb {
 //        $query = "SELECT * from users where userId = $uId";
 //        return $this->query($query);
 //    }
-    
+
     function getUserById($uId) {
         $query = "SELECT * from users where userId = $uId";
         return $this->query($query);
@@ -61,14 +66,11 @@ class user extends adb {
         $query = "SELECT EXISTS (SELECT * FROM users WHERE email = '$email' AND password = '$password')";
         return $this->query($query);
     }
-    function debtUpload($creditor, $debtor, $contact, $email, $currency, $amount, $maturityDate, $debtDescription, $supportingDocs){
-        $query = "INSERT INTO debts set creditorId = '$creditor', debtorName = '$debtor', debtorPhone = '$contact', debtorEmail = '$email', currency = '$currency', amount ='$amount', maturityDate = '$maturityDate', summary = '$debtDescription', supportingDocs = '$supportingDocs'";
-        return $this->query($query);
-    }
 
     /*
      * updates the record identified by id 
      */
+
     function change_password($username, $newPassword) {
         //write the SQL query and call $this->query()
         $query = "update into users set pasword=$newPassword where username=$username";

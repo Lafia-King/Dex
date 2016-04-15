@@ -15,7 +15,7 @@
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="description" content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. ">
         <meta name="keywords" content="materialize, admin template, dashboard template, flat admin template, responsive admin template,">
-        <title>Deterr - Bid</title>
+        <title>Deterr - Sales</title>
 
         <!-- Favicons-->
         <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
@@ -34,8 +34,8 @@
 
         <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->    
         <link href="js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
-        <!--<link href="js/plugins/jvectormap/jquery-jvectormap.css" type="text/css" rel="stylesheet" media="screen,projection">-->
-        <!--<link href="js/plugins/chartist-js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection">-->
+        <link href="js/plugins/jvectormap/jquery-jvectormap.css" type="text/css" rel="stylesheet" media="screen,projection">
+        <link href="js/plugins/chartist-js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection">
 
 
     </head>
@@ -113,7 +113,7 @@
                             </div>
                         </li>
 
-                        <li class="bold"><a href="dashboard.html" class="waves-effect waves-cyan"><i class="mdi-action-dashboard"></i>Dashboard</a>
+                        <li class="bold"><a href="dashboard.php" class="waves-effect waves-cyan"><i class="mdi-action-dashboard"></i>Dashboard</a>
                         </li>
 
                         <li class="no-padding">
@@ -131,12 +131,12 @@
                             </ul>
                         </li>
                         <li class="li-hover"><div class="divider"></div></li>
-                        <li class="bold"><a href="sales.html" class="waves-effect waves-cyan"><i class="mdi-communication-email"></i>Sales<span class="new badge">4</span></a>
+                        <li class="bold"><a href="sales.php" class="waves-effect waves-cyan"><i class="mdi-communication-email"></i>Sales<span class="new badge">4</span></a>
                         </li>
                         <li class="bold"><a href="app-calendar.html" class="waves-effect waves-cyan"><i class="mdi-editor-insert-invitation"></i>Watch List</a>
                         </li>
                         <li class="li-hover"><div class="divider"></div></li>
-                        <li class="bold"><a href="purchases.html" class="waves-effect waves-cyan"><i class="mdi-communication-email"></i>Purchases/Bids<span class="new badge">4</span></a>
+                        <li class="bold"><a href="purchases.php" class="waves-effect waves-cyan"><i class="mdi-communication-email"></i>Purchases/Bids<span class="new badge">4</span></a>
                         </li>
                         <li class="bold"><a href="index.html" class="waves-effect waves-cyan"><i class="mdi-action-dashboard"></i>All Lists</a>
                         </li>
@@ -144,6 +144,27 @@
                         <li class="bold"><a href="index.html" class="waves-effect waves-cyan"><i class="mdi-action-dashboard"></i>History</a>
                         </li>
 
+                        <!--                        <li class="li-hover"><div class="divider"></div></li>
+                                                <li class="li-hover"><p class="ultra-small margin more-text">MORE</p></li>
+                                                <li><a href="css-grid.html"><i class="mdi-image-grid-on"></i> Grid</a>
+                                                </li>
+                                                <li><a href="css-color.html"><i class="mdi-editor-format-color-fill"></i> Color</a>
+                                                </li>
+                                                <li><a href="css-helpers.html"><i class="mdi-communication-live-help"></i> Helpers</a>
+                                                </li>
+                                                <li><a href="changelogs.html"><i class="mdi-action-swap-vert-circle"></i> Changelogs</a>
+                                                </li>                    
+                                                <li class="li-hover"><div class="divider"></div></li>
+                                                <li class="li-hover"><p class="ultra-small margin more-text">Daily Sales</p></li>
+                                                <li class="li-hover">
+                                                    <div class="row">
+                                                        <div class="col s12 m12 l12">
+                                                            <div class="sample-chart-wrapper">                            
+                                                                <div class="ct-chart ct-golden-section" id="ct2-chart"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>-->
                     </ul>
                     <a href="#" data-activates="slide-out" class="sidebar-collapse btn-floating btn-medium waves-effect waves-light hide-on-large-only darken-2"><i class="mdi-navigation-menu" ></i></a>
                 </aside>
@@ -159,8 +180,8 @@
                                 <h5 class="breadcrumbs-nav">Sales</h5>
                                 <ol class="breadcrumb">
                                     <li><a href="index.html">Dashboard</a></li>
-                                    <li><a href="sales.html">Sales</a></li>
-                                    <li class="active">Bid</li>
+                                    <!--<li><a href="#">CSS</a></li>-->
+                                    <li class="active">Sales</li>
                                 </ol>
                             </div>
                         </div>
@@ -168,91 +189,80 @@
                 </div>
                 <!--breadcrumbs end-->
 
-                <!--style="display:inline"-->
-
-                <!--bid panel-->
-                <div class="col s12 m8 l9">
-                    <div class="card-panel">
-                        <div style="display: inline-block">
-                            <img class="responsive-img" src="images/1.jpg" alt="style typography" >
-                        </div>
-                        <div style="display: inline-block">
-                            <h4 >Creditor</h4>
-                            <h5><i class="mdi-social-person"></i>Auction by: </h5>
-                            <h5><i class="mdi-notification-event-note"></i>From </h5>
-                            <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h6>
-                            <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h6>
-                            <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h6>
-                            <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h6>
-                            <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h6>
-                            <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h6>
-                            <h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h6>
-                        </div>
-                        <p></p>
-                        <div class="row">
-                            <div class="col s12">
-                                <ul class="tabs" style="border: black">
-                                    <li class="tab col s3"><a  class="active" href="#bid">Bid</a></li>
-                                    <li class="tab col s3"><a href="#history">Auction History</a></li>
-                                    <li class="tab col s3 disabled"><a href="#test3">Disabled Tab</a></li>
-                                    <li class="tab col s3 disabled"><a href="#test4">Test 4</a></li>
-                                </ul>
+                <!--debtUpload-->          
+                <div class="row">
+                    <div class="col s12 m12 l12">
+                        <div class="card-panel">
+                            <h4 class="header2">Upload a debt</h4>
+                            <div class="row">
+                                <form class="col s12 m12 l12" enctype="multipart/form-data" action="php/upload.php" method="post">
+                                    <div class="row">
+                                        <div class="input-field col s12 m12 l12">
+                                            <input id="debtorName" type="text" class="validate">
+                                            <label for="debtorName">Name of Debtor</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s6 m6 l6">
+                                            <input id="debtorPhone" type="tel" class="validate">
+                                            <label for="debtorPhone">Contact</label>
+                                        </div>
+                                        <div class="input-field col s6 m6 l6">
+                                            <input id="debtorEmail" type="email" class="validate">
+                                            <label for="debtorEmail">Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s6 m6 l2">                                                    
+                                            <select name="currency" id="currency" class="validate">
+                                                <option value="" disabled selected>Currency</option>
+                                                <option value="1">USD</option>
+                                                <option value="2">Pound</option>
+                                                <option value="3">Euro</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-field col s6 m6 l4">
+                                            <input id="amount" type="number" class="validate">
+                                            <label for="amount">Amount</label>
+                                        </div>
+                                        <div id="input-date-picker" class="input-field col s12 m12 l6">
+                                            <input id="maturityDate" type="date" class="datepicker">
+                                            <label for="maturityDate">Maturity Date of Debt</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <div class="input-field col s12">
+                                                <textarea id="summary" class="materialize-textarea" length="255"></textarea>
+                                                <label for="summary">Debt Description</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div id="directory" class="file-field input-field col s12 m12 l12">
+                                            <label for="supportingDocs">Upload supporting documents</label>
+                                            <input class="file-path validate" type="text"/>
+                                            <div class="btn">
+                                                <span>Browse</span>
+                                                <input type="file" name="supportingDocs" id="supportingDocs"/>
+                                            </div>                                                
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <!--<div class="row">-->
+                                        <div class="input-field col s12">
+                                            <button class="btn cyan waves-effect waves-light right" onclick="uploadDebt()">Upload
+                                                <i class="mdi-content-send right"></i>
+                                            </button>
+                                        </div>
+                                        <!--</div>-->
+                                    </div>
+                                </form>
                             </div>
-                            <div id="bid" class="col s12">Test 1</div>
-                            <div id="history" class="col s12">
-                                <div class="col s12 m12 l12">
-                                    <table class="responsive-table">
-                                        <thead>
-                                            <tr>
-                                                <th data-field="id">Date</th>
-                                                <th data-field="name">Bid</th>
-                                                <th data-field="price">Bidder</th>
-                                                <th data-field="total">Amount</th>
-                                                <th data-field="status">Status</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Alvin</td>
-                                                <td>Eclair</td>
-                                                <td>$0.87</td>
-                                                <td>$1.87</td>
-                                                <td>Yes</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Alan</td>
-                                                <td>Jellybean</td>
-                                                <td>$3.76</td>
-                                                <td>$10.87</td>
-                                                <td>No</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Jonathan</td>
-                                                <td>Lollipop</td>
-                                                <td>$7.00</td>
-                                                <td>$12.87</td>
-                                                <td>Yes</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Shannon</td>
-                                                <td>KitKat</td>
-                                                <td>$9.99</td>
-                                                <td>$14.87</td>
-                                                <td>No</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div id="test3" class="col s12">Test 3</div>
-                            <div id="test4" class="col s12">Test 4</div>
                         </div>
-
                     </div>
                 </div>
-                <!--bid panel end-->
-
-
+                <!--debtUpload end-->
 
                 <!--END CONTENT-->
 
@@ -322,15 +332,17 @@
 
         <!--plugins.js - Some Specific JS codes for Plugin Settings-->
         <script type="text/javascript" src="js/plugins.js"></script>
-        <!--js scripts-->
-        <!--        <script>
-                    $('.datepicker').pickadate();
-                </script>
-                <script>
-                    $(document).ready(function () {
-                        $('input#input_text, textarea#textarea1').characterCounter();
-                    });
-                </script>-->
+        <script>
+                                                $('.datepicker').pickadate({
+                                                    selectMonths: true, // Creates a dropdown to control month
+                                                    selectYears: 100, // Creates a dropdown of x years to control year
+                                                    format: 'yyyy-mm-dd'});
+        </script>
+        <script>
+            $(document).ready(function () {
+                $('input#input_text, textarea#textarea1').characterCounter();
+            });
+        </script>
         <!-- Toast Notification -->
         <!--        <script type="text/javascript">
                     // Toast Notification

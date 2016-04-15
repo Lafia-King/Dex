@@ -15,7 +15,7 @@
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="description" content="Materialize is a Material Design Admin Template,It's modern, responsive and based on Material Design by Google. ">
         <meta name="keywords" content="materialize, admin template, dashboard template, flat admin template, responsive admin template,">
-        <title>Deterr - Sales</title>
+        <title>Dexterr - Purchases</title>
 
         <!-- Favicons-->
         <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
@@ -34,8 +34,9 @@
 
         <!-- INCLUDED PLUGIN CSS ON THIS PAGE -->    
         <link href="js/plugins/perfect-scrollbar/perfect-scrollbar.css" type="text/css" rel="stylesheet" media="screen,projection">
-        <link href="js/plugins/jvectormap/jquery-jvectormap.css" type="text/css" rel="stylesheet" media="screen,projection">
-        <link href="js/plugins/chartist-js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+        <link href="css/prism.css" type="text/css" rel="stylesheet" media="screen,projection">
+        <!--<link href="js/plugins/jvectormap/jquery-jvectormap.css" type="text/css" rel="stylesheet" media="screen,projection">-->
+        <!--<link href="js/plugins/chartist-js/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection">-->
 
 
     </head>
@@ -51,12 +52,11 @@
 
         <!-- START HEADER -->
         <header id="header" class="page-topbar">
-
             <!-- start header nav-->
             <div class="navbar-fixed">
                 <nav class="cyan darken-2">
                     <div class="nav-wrapper">
-                        <h1 class="logo-wrapper"><a href="index.html" class="brand-logo darken-1"><img src="" alt="dexterr logo"></a> <span class="logo-text">Dexterr</span></h1>
+                        <h1 class="logo-wrapper"><a href="index.html" class="brand-logo darken-1"><img src="" alt="dexterr logo"></a> <span class="logo-text">Materialize</span></h1>
                         <ul class="right hide-on-med-and-down">
                             <li class="search-out">
                                 <input type="text" class="search-out-text">
@@ -75,7 +75,6 @@
 
             </div>
             <!-- end header nav-->
-
         </header>
         <!-- END HEADER -->
 
@@ -113,7 +112,7 @@
                             </div>
                         </li>
 
-                        <li class="bold"><a href="dashboard.html" class="waves-effect waves-cyan"><i class="mdi-action-dashboard"></i>Dashboard</a>
+                        <li class="bold"><a href="dashboard.php" class="waves-effect waves-cyan"><i class="mdi-action-dashboard"></i>Dashboard</a>
                         </li>
 
                         <li class="no-padding">
@@ -131,12 +130,12 @@
                             </ul>
                         </li>
                         <li class="li-hover"><div class="divider"></div></li>
-                        <li class="bold"><a href="sales.html" class="waves-effect waves-cyan"><i class="mdi-communication-email"></i>Sales<span class="new badge">4</span></a>
+                        <li class="bold"><a href="sales.php" class="waves-effect waves-cyan"><i class="mdi-communication-email"></i>Sales<span class="new badge">4</span></a>
                         </li>
                         <li class="bold"><a href="app-calendar.html" class="waves-effect waves-cyan"><i class="mdi-editor-insert-invitation"></i>Watch List</a>
                         </li>
                         <li class="li-hover"><div class="divider"></div></li>
-                        <li class="bold"><a href="purchases.html" class="waves-effect waves-cyan"><i class="mdi-communication-email"></i>Purchases/Bids<span class="new badge">4</span></a>
+                        <li class="bold"><a href="purchases.php" class="waves-effect waves-cyan"><i class="mdi-communication-email"></i>Purchases/Bids<span class="new badge">4</span></a>
                         </li>
                         <li class="bold"><a href="index.html" class="waves-effect waves-cyan"><i class="mdi-action-dashboard"></i>All Lists</a>
                         </li>
@@ -177,11 +176,10 @@
                     <div class="container">
                         <div class="row">
                             <div class="col s12 m12 l12">
-                                <h5 class="breadcrumbs-nav">Sales</h5>
+                                <h5 class="breadcrumbs-title">Purchase</h5>
                                 <ol class="breadcrumb">
                                     <li><a href="index.html">Dashboard</a></li>
-                                    <!--<li><a href="#">CSS</a></li>-->
-                                    <li class="active">Sales</li>
+                                    <li class="active">Purchases</li>
                                 </ol>
                             </div>
                         </div>
@@ -189,82 +187,15 @@
                 </div>
                 <!--breadcrumbs end-->
 
-                <!--debtUpload-->          
-                <div class="row">
-                    <div class="col s12 m12 l12">
-                        <div class="card-panel">
-                            <h4 class="header2">Upload a debt</h4>
-                            <div class="row">
-                                <form class="col s12 m12 l12" enctype="multipart/form-data" action="php/upload.php" method="post">
-                                    <div class="row">
-                                        <div class="input-field col s12 m12 l12">
-                                            <input id="debtorName" type="text" class="validate">
-                                            <label for="debtorName">Name of Debtor</label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="input-field col s6 m6 l6">
-                                            <input id="debtorPhone" type="tel" class="validate">
-                                            <label for="debtorPhone">Contact</label>
-                                        </div>
-                                        <div class="input-field col s6 m6 l6">
-                                            <input id="debtorEmail" type="email" class="validate">
-                                            <label for="debtorEmail">Email</label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="input-field col s6 m6 l2">                                                    
-                                            <select name="currency" id="currency" class="validate">
-                                                <option value="" disabled selected>Currency</option>
-                                                <option value="1">USD</option>
-                                                <option value="2">Pound</option>
-                                                <option value="3">Euro</option>
-                                            </select>
-                                        </div>
-                                        <div class="input-field col s6 m6 l4">
-                                            <input id="amount" type="number" class="validate">
-                                            <label for="amount">Amount</label>
-                                        </div>
-                                        <div class="input-field col s12 m12 l6">
-                                            <input id="maturityDate" type="date" class="datepicker">
-                                            <label for="maturityDate">Maturity Date of Debt</label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="input-field col s12">
-                                            <div class="input-field col s12">
-                                                <textarea id="summary" class="materialize-textarea" length="255"></textarea>
-                                                <label for="summary">Debt Description</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div id="directory" class="file-field input-field col s12 m12 l12">
-                                            <label for="supportingDocs">Upload supporting documents</label>
-                                            <input class="file-path validate" type="text"/>
-                                            <div class="btn">
-                                                <span>Browse</span>
-                                                <input type="file" name="supportingDocs" id="supportingDocs"/>
-                                            </div>                                                
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <!--<div class="row">-->
-                                        <div class="input-field col s12">
-                                            <button class="btn cyan waves-effect waves-light right" onclick="uploadDebt()">Upload
-                                                <i class="mdi-content-send right"></i>
-                                            </button>
-                                        </div>
-                                        <!--</div>-->
-                                    </div>
-                                </form>
-                            </div>
+                <!--debt card-->
+                <div class="container">
+                    <div id="card-reveal" class="section">
+                        <div class="row" id="cards">
+                            <!--function displayDebts() in dex.js-->
                         </div>
                     </div>
                 </div>
-                <!--debtUpload end-->
-
-                <!--END CONTENT-->
+                <!--end debt cards-->
 
             </div>
             <!-- END WRAPPER -->
@@ -308,10 +239,18 @@
         <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>    
         <!--materialize js-->
         <script type="text/javascript" src="js/materialize.min.js"></script>
+        <!-- dex -->
+        <script type="text/javascript" src="js/dex.js"></script>
+        <!--prism-->
+        <script type="text/javascript" src="js/prism.js"></script>
         <!--scrollbar-->
         <script type="text/javascript" src="js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-        <!--dex-->
-        <script type="text/javascript" src="js/dex.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('.tooltipped').tooltip({delay: 50});
+                displayDebt();
+            });
+        </script>
 
         <!--         chartist 
                 <script type="text/javascript" src="js/plugins/chartist-js/chartist.min.js"></script>   
@@ -332,30 +271,22 @@
 
         <!--plugins.js - Some Specific JS codes for Plugin Settings-->
         <script type="text/javascript" src="js/plugins.js"></script>
-        <script>
-                                                $('.datepicker').pickadate();
-        </script>
-        <script>
-            $(document).ready(function () {
-                $('input#input_text, textarea#textarea1').characterCounter();
-            });
-        </script>
         <!-- Toast Notification -->
-        <!--        <script type="text/javascript">
-                    // Toast Notification
-                    $(window).load(function () {
-                        setTimeout(function () {
-                            Materialize.toast('<span>Hiya! I am a toast.</span>', 1500);
-                        }, 3000);
-                        setTimeout(function () {
-                            Materialize.toast('<span>You can swipe me too!</span>', 3000);
-                        }, 5500);
-                        setTimeout(function () {
-                            Materialize.toast('<span>You have new order.</span><a class="btn-flat yellow-text" href="#">Read<a>', 3000);
-                        }, 18000);
-                    });
-        
-                </script>-->
+        <script type="text/javascript">
+            // Toast Notification
+            //            $(window).load(function () {
+            //                setTimeout(function () {
+            //                    Materialize.toast('<span>Hiya! I am a toast.</span>', 1500);
+            //                }, 3000);
+            //                setTimeout(function () {
+            //                    Materialize.toast('<span>You can swipe me too!</span>', 3000);
+            //                }, 5500);
+            //                setTimeout(function () {
+            //                    Materialize.toast('<span>You have new order.</span><a class="btn-flat yellow-text" href="#">Read<a>', 3000);
+            //                }, 18000);
+            //            });
+
+        </script>
     </body>
 
 </html>
